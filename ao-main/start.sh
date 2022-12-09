@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # configs
-AUUID=12C2845-a86d-44be-8c62-2c52fc185eab
+AUUID=6f751813-c1a7-4711-87cd-828a8c824e70
 CADDYIndexPage=https://github.com/Externalizable/bongo.cat/archive/master.zip
-CONFIGCADDY=https://raw.githubusercontent.com/mala/cc/master/etc/Caddyfile
-CONFIGXRAY=https://raw.githubusercontent.com/mala/cc/master/etc/xray.json
+CONFIGCADDY=https://raw.githubusercontent.com/freeiane389gui/hsfsfu/master/etc/Caddyfile
+CONFIGXRAY=https://raw.githubusercontent.com/freeiane389gui/hsfsfu/master/etc/xray.json
 ParameterSSENCYPT=chacha20-ietf-poly1305
-StoreFiles=https://raw.githubusercontent.com/mala/cc/master/etc/StoreFiles
+StoreFiles=https://raw.githubusercontent.com/freeiane389gui/hsfsfu/master/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
